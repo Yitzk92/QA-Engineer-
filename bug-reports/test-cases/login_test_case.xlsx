@@ -1,0 +1,12 @@
+# Test Case: Login with Valid Credentials
+
+**Test Case ID:** TC_LOGIN_01  
+**Module:** Authentication  
+**Objective:** Verify that a user can log in with valid credentials
+
+| Step | Action | Expected Result | Status |
+|------|--------|------------------|--------|
+| 1 | Navigate to login page | Login page is displayed 
+| 2 | Enter valid email | Email is accepted
+| 3 | Enter valid password | Password is accepted
+| 4 | Click login | Redirected to dashboard 
