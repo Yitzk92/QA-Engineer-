@@ -1,0 +1,66 @@
+
+# Creating a professional test script for login with valid login details
+data = {
+    "Test Case ID": ["TC_LOGIN_001", "TC_LOGIN_002", "TC_LOGIN_003", "TC_LOGIN_004"],
+    "Test Scenario": [
+        "Open login page",
+        "Enter valid email address",
+        "Enter valid password",
+        "Click on login button and verify redirection"
+    ],
+    "Test Steps": [
+        "Navigate to the login URL",
+        "Type a valid email into the email field",
+        "Type a valid password into the password field",
+        "Click the login button and observe behavior"
+    ],
+    "Expected Result": [
+        "Login page should load successfully",
+        "Email should be accepted without validation error",
+        "Password should be accepted without validation error",
+        "User should be redirected to dashboard/homepage"
+    ],
+    "Actual Result": [
+        "", "", "", ""
+    ],
+    "Status (Pass/Fail)": [
+        "", "", "", ""
+    ],
+    "Severity": [
+        "Low", "Medium", "Medium", "High"
+    ],
+    "Tested By": [
+        "Yitzhak Segal", "Yitzhak Segal", "Yitzhak Segal", "Yitzhak Segal"
+    ]
+}
+
+# Creat DataFrame
+df = pd.DataFrame(data)
+
+# Showing the file to the user
+from ace_tools import display_dataframe_to_user
+display_dataframe_to_user(name="Login Test Case (Professional)", dataframe=df)
+Result
+   Test Case ID                                 Test Scenario  \
+0  TC_LOGIN_001                               Open login page   
+1  TC_LOGIN_002                     Enter valid email address   
+2  TC_LOGIN_003                          Enter valid password   
+3  TC_LOGIN_004  Click on login button and verify redirection   
+
+                                      Test Steps  \
+0                      Navigate to the login URL   
+1        Type a valid email into the email field   
+2  Type a valid password into the password field   
+3    Click the login button and observe behavior   
+
+                                     Expected Result Actual Result  \
+0                Login page should load successfully                 
+1  Email should be accepted without validation error                 
+2  Password should be accepted without validation...                 
+3    User should be redirected to dashboard/homepage                 
+
+  Status (Pass/Fail) Severity      Tested By  
+0                         Low  Yitzhak Segal  
+1                      Medium  Yitzhak Segal  
+2                      Medium  Yitzhak Segal  
+3                        High  Yitzhak Segal
